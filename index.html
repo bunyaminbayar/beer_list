@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://static.wixstatic.com/media/b87a27_4618c9c31a3a4b92a09ac10b5182bba8~mv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/b87a27_4618c9c31a3a4b92a09ac10b5182bba8~mv2.png"
+        type="image/x-icon">
+    <title>Beer List</title>
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- Gradyan Animation BG -->
+    <div class="blobs" role="presentation">
+        <div class="blob-rotate">
+            <div class="blob-move">
+                <div class="blob"></div>
+            </div>
+        </div>
+        <div class="blob-rotate">
+            <div class="blob-move">
+                <div class="blob"></div>
+            </div>
+        </div>
+        <div class="blob-rotate">
+            <div class="blob-move">
+                <div class="blob"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Gradyan Animation BG -->
+    <div class="containder">
+        <!-- Table -->
+        <div class="tableBox">
+            <!-- Header -->
+            <h1>Beer List</h1>
+            <table class="beerListTable">
+                <thead>
+                    <tr>
+                        <th>
+                            Image
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Description
+                        </th>
+                        <th>
+                            Food Paring
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="beerList"></tbody>
+            </table>
+            <h5 class="chartTitle">How many beers from the table were brewed for the first time in different years ?</h5>
+            <!-- chart -->
+            <div id="graph"></div>
+        </div>
+    </div>
+    <!-- Beer Info Modal -->
+    <div class="beerInfoModal">
+        <div class="beerInfoCard">
+            <div class="cardHeader">
+                <h2 class="beerModalTitle"></h2>
+            </div>
+            <div class="cardBody">
+                <div class="İmgCont"></div>
+                <h5 class="midleCardTitle">Ingredients</h5>
+                <div class="contentCont">
+                    <div class="cloum">
+                        <b>Malt</b>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Amount
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="infoMalt"></tbody>
+                        </table>
+                    </div>
+                    <div class="cloum">
+                        <b>Hops</b>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Amount
+                                    </th>
+                                    <th>
+                                        Attribute
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="infoHops"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <b>Yeast</b>
+                <div class="infoYeast"></div>
+                <h5 class="midleCardTitle">Tips</h5>
+                <div class="tips"></div>
+            </div>
+            <div class="cardFooter">
+                <button class="closeModal">Ok</button>
+            </div>
+        </div>
+        <!-- Modal Overlay -->
+        <div class="modalOverlay"></div>
+    </div>
+    <!-- Axios -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js'></script>
+    <script src="main.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+    <script src="morris.js"></script>
+</body>
+
+</html>
